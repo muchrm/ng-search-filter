@@ -1,4 +1,4 @@
-<input class="navbar-text" type="text" class="form-control" placeholder="ค้นหา" (keyup)="filter($event.target.value)">
+<input type="text" class="form-control" placeholder="ค้นหา" (keyup)="filter($event.target.value)">
 <ul>
   <li *ngFor="let category of filteredCategories$ | async">
     {{category}}
